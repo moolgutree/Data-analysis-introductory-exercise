@@ -12,7 +12,7 @@ for row in data:
     for i in range(4, 8):
         row[i] = int(row[i].replace(',',''))
     rate = row[4]/(row[4]+row[6])
-    if rate > mx and rate != 1:
+    if rate > mx and rate != 1 and row[5] > 1000:
         mx=rate
         repo = rate
         mxs = row[1]+ ' ' + row[3]
