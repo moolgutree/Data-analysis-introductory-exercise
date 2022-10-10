@@ -6,7 +6,7 @@ header = next(data)
 header = next(data)
 
 mx=0
-low=99999999999999999999999999999999999
+low=0
 mxs=''
 lows=''
 repo=[]
@@ -19,7 +19,7 @@ for row in data:
         mx = row[10]
         repo = row[10]
         mxs = row[1]+ ' ' + row[3]
-    if row[11] < low and row[11] > 1:
+    if row[11] > low and row[11] > 1:
         low = row[11]
         lowRepo = row[11]
         lows = row[1] + ' ' + row[3]
