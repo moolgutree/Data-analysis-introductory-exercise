@@ -1,3 +1,5 @@
+#출근시간대(7시) 사람들이 가장 많이 타고 내리는 역
+
 import csv
 
 f = open('subwaytime.csv')
